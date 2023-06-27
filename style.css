@@ -1,0 +1,160 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    padding: 40px 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background: linear-gradient(135deg, rgba(214,48,48,1) 0%, rgba(168,102,207,1) 45%, rgba(77,6,42,1) 100%);
+    background-repeat: no-repeat;
+  
+    font-family: 'arial';
+    color: #1b1b1b;
+}
+
+.overview {
+    margin-bottom: 40px;
+    display: flex;
+}
+
+.introduction {
+    width: 60%;
+    padding: 40px;
+    box-sizing: border-box;
+}
+
+.greeting {
+    width: fit-content;
+    padding: 10px;
+    margin-bottom: 5px;
+
+    background-color: #fa5a5a;
+    border-radius: 20px 20px 20px 0;
+
+    color: white;
+}
+
+.name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+}
+
+.qualifications > span {
+    color: rgb(218, 218, 218);
+    font-size: .6rem;
+}
+
+.qualifications > span:not(:last-child) {
+    padding: 0 6px;
+    border-right: 1px solid rgb(218, 218, 218);
+}
+
+.profile {
+    width: 40%;
+    box-sizing: border-box;
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+
+    position: relative;
+}
+
+.me,
+.latte {
+    width: 60%;
+    max-width: 500px;
+    min-width: 100px;
+    box-sizing: border-box;
+
+    aspect-ratio: 1;
+    object-fit: cover;
+
+    border-radius: 50%;
+    border: 30px solid rgba(255, 255, 255, .3)
+}
+
+.latte {
+    max-width: 100px;
+    max-height: 100px;
+    border: 10px solid rgba(2565, 255, 255, .3);
+    
+    position: absolute;
+    right: 50px;
+    bottom: 0;
+}
+
+.text {
+    width: 80%;
+}
+
+.text > p {
+    width: 100%;
+
+    color: white;
+    font-size: 1rem;
+    text-align: justify;
+    margin: 0 0 20px 0;
+    text-indent: 20px;
+}
+
+.works {
+    width: 80%;
+
+    display: flex;
+
+    border: 1px solid white;
+    border-radius: 5px;
+}
+
+.work {
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+}
+
+.work:hover {
+    background-color: rgba(255, 255, 255, 0.192);
+}
+
+.work:not(:last-child) {
+    border-right: 1px solid white;
+}
+
+.work a {
+    margin-bottom: 10px;
+    display: block;
+
+    color: white;
+    text-decoration: none;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.work a:hover {
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.work a::after {
+    content: '➡';
+    opacity: 0;
+    display: inline;
+    transition: all 0.3s ease-in-out;
+    left: 0px;
+    position: relative;
+}
+
+.work a:hover::after {
+    opacity: 1; 
+    left: 10px;
+}
+
+.work div {
+    color: white;
+    font-size: .8rem;
+}
